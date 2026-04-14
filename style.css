@@ -50,4 +50,11 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
 }
+
+.gaben-bilde {
+  width: 300px;
+  height: auto;
+  margin-top: -30px;
+  border-radius: 26px;
+}
   
