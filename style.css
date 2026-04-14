@@ -7,20 +7,47 @@
 
 /* 2. Sørger for at bakgrunnen dekker hele høyden på skjermen */
 body {
-  background-color: rgb(0, 0, 0); /* Her setter du fargen for hele siden */
+  background-color: #121212; /* Her setter du fargen for hele siden */
   min-height: 100vh;
 }
 
 /* 3. Sentrerer logoen midt på skjermen */
 .top {
-  display: flex;
-  justify-content: center; /* Sentrerer horisontalt */
-  align-items: center;     /* Sentrerer vertikalt */
-  min-height: 100vh;       /* Gjør at containeren tar hele skjermhøyden */
-  width: 100%;
+  display: flex;           /* AKTIVERER flexbox */
+  flex-direction: column;  /* Stabler bilde og tekst loddrett */
+  justify-content: flex-start; /* Beholder det høyt oppe */
+  align-items: center;     /* SENTRERER horisontalt (bruk center, ikke end) */
+  
+  margin-top: -90px;       /* Drar det oppover (padding kan ikke være negativ) */
+  min-height: 50vh;
+  width: 100%;             /* Bruk 100% bredde på beholderen så den kan sentrere innholdet */
 }
 
+/* Slik styrer du selve størrelsen på bildet inni */
 .logo {
-  width: 200px; /* Juster størrelsen på bildet ditt her */
-  height: auto;
+  width: 450px; 
+  height: auto
+
 }
+
+.velkommen {
+  width: 450px;
+  margin: -50;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: white
+  
+}
+
+.info {
+  display: flex;
+  flex-direction: column; /* Legger elementene under hverandre */
+  align-items: center;    /* Sentrerer elementene horisontalt */
+  text-align: center;     /* Sentrerer selve teksten inni avsnittet */
+  max-width: 800px;       /* Setter en maksbredde for bedre lesbarhet */
+  margin: 0 auto;         /* Sentrerer hele beholderen på siden */
+  padding: 60px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+  
