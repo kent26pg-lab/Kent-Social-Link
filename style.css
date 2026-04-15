@@ -52,10 +52,22 @@ body {
   color: white;
 }
 
+.info2 {
+    display: flex;
+  flex-direction: column; /* Legger elementene under hverandre */
+  align-items: center;    /* Sentrerer elementene horisontalt */
+  text-align: center;     /* Sentrerer selve teksten inni avsnittet */
+  max-width: 800px;       /* Setter en maksbredde for bedre lesbarhet */
+  margin: -30px;         /* Sentrerer hele beholderen på siden */
+  padding: 60px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
 .gaben-bilde {
   width: 300px;
   height: auto;
   margin-top: 10px;
   border-radius: 26px;
+  padding-bottom: 20;
 }
   
